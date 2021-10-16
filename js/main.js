@@ -29,3 +29,27 @@ function scrollNavbar(){
     if(this.scrollY >= 50) navbar.classList.add('scroll-navbar'); else navbar.classList.remove('scroll-navbar')
 }
 window.addEventListener('scroll', scrollNavbar)
+
+
+
+$(document).ready(function(){
+/*==================== CAROUSEL ====================*/
+$('.services-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    autoplay:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2,
+        },
+        1000:{
+            items:3,
+
+        }
+    }
+});
+});
