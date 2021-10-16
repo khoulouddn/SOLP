@@ -185,7 +185,7 @@ ul{
     min-height: 100vh;
     padding: 100px 0;
     background-color: var(--main-dark);
-    border-radius: 0 0 100px 100px;
+    border-radius: 0 0 100px 0;
     position: relative;
     z-index: 1;
 }

@@ -26,6 +26,6 @@ modalCloses.forEach((modalClose) =>{
 /*==================== CHANGE BACKGROUND NAV ====================*/
 function scrollNavbar(){
     const navbar = document.getElementById('navbar')
-    if(this.scrollY >= 200) navbar.classList.add('scroll-navbar'); else navbar.classList.remove('scroll-navbar')
+    if(this.scrollY >= 50) navbar.classList.add('scroll-navbar'); else navbar.classList.remove('scroll-navbar')
 }
 window.addEventListener('scroll', scrollNavbar)
