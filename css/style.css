@@ -266,31 +266,6 @@ ul{
     position: relative;
 }
 
-.home-img .circle{
-    position: absolute;
-    z-index: 1;
-    height: 400px;
-    width: 400px;
-    border: 1px solid rgba(179, 180, 184, 0.781);
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%)
-}
-
-.home-img .circle::before{
-    content: '';
-    position: absolute;
-    height: 60px;
-    width: 60px;
-    background-color: rgba(46, 45, 45, 0.4);
-    border-radius: 50%;
-    left: 30px;
-    top: 30px;
-    transform-origin: 170px 170px;
-    animation: spin 10s linear infinite;
-}
-
 
 /*==================== MODAL ====================*/
 
@@ -461,4 +436,70 @@ ul{
       font-weight: 300;
       color: var(--dark-400);
       margin: 0 0 15px;
+}
+
+/*==================== ACHIVMENTS ====================*/
+.facts{
+    background-color: var(--dark-100);
+}
+
+.facts-img img{
+    max-width: 250px;
+    width: 100%;
+    box-shadow: var(--shadow-block-100);
+    border-radius: 32px;
+    animation: bounceTop 3s ease infinite;
+}
+
+.facts section-title{
+    margin-bottom: 20px;
+}
+
+.facts section-title h2{
+    text-align: left;
+}
+
+.fact-text{
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--dark-900);
+    margin: 0 0 15px;
+    font-weight: 300;
+}
+
+.achiv-item{
+    padding: 40px 30px;
+    text-align: center;
+    box-sizing: var(--shadow-block-100);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.achiv-item h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+
+.achiv-item span{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    line-height: 26px;
+    display: block;
+    color: #ffffff;
+}
+.achiv-item.style1{
+    background-color: var(--color-1);
+}
+.achiv-item.style2{
+    background-color: var(--color-2);
+}
+.achiv-item.style3{
+    background-color: var(--color-3);
+}
+.achiv-item.style4{
+    background-color: var(--main-color);
 }
