@@ -3,7 +3,7 @@
 
 
 :root{
-   --main-color: #660728;
+   --main-color: #471728;
    --color-1: #cbe91e;
    --color-2: #db9c15;
    --color-3: #09cfd6;
@@ -630,4 +630,79 @@ ul{
     margin:0;
     color: var(--dark-400);
     line-height: 26px;
+}
+
+/*==================== TESTIMONIALS ====================*/
+.testimonials{
+    background-color: var(--dark-100);
+}
+
+.testimonials-item{
+    margin: 15px;
+    padding: 30px;
+    box-shadow: var(--shadow-block-100);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonials-item .img-box{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-bottom: 30px;
+    border: 4px solid var(--main-color);
+    border-radius: 50%;
+    position: relative;
+}
+
+.testimonials-item .img-box img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.testimonials-item .img-box i{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    left: calc(100% - 15px);
+    top: calc(50% - 15px);
+}
+
+.testimonials-item p{
+    font-size: 16px;
+    margin: 0 0 20px;
+    color: var(--dark-400);
+    line-height: 26px;
+    font-weight: 300;
+}
+
+.testimonials-item h3{
+    font-size: 22px;
+    color: var(--dark-900);
+    font-weight: 500;
+    margin: 0 0 5px;
+    text-transform: capitalize;
+}
+
+.testimonials-item span{
+    display: block;
+    font-size: 16px;
+    color: var(--dark-400);
+    font-weight: 300;
+}
+
+.testimonials-item .rating{
+    margin-top: 10px;
+}
+
+.testimonials-item .rating i{
+    display: inline-block;
+    font-size: 16px;
+    color: var(--color-2);
 }
