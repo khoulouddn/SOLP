@@ -132,6 +132,7 @@ ul{
     }
  }
 
+
 .effect-wrap .effect{
     position: absolute;
     z-index: -1;
@@ -195,6 +196,8 @@ ul{
 .owl-carousel button.owl-dot.active{
     background-color: var(--main-color);
 }
+
+
 /* NAVBAR */
 .navbar{
     background-color: transparent;
