@@ -24,29 +24,29 @@
   
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fas fa-bars"></i>
     </button>
   
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link active" data-scroll-nav="0" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" data-scroll-nav="1" href="#">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" data-scroll-nav="2" href="#">Achievements</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Testimonials</a>
+          <a class="nav-link" data-scroll-nav="3" href="#">Testimonials</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" data-scroll-nav="4" href="#">Pricing</a>
         </li> 
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" data-scroll-nav="5" href="#">Contact</a>
         </li>      
       </ul>
     </div>
@@ -56,7 +56,7 @@
   
   
   <!-- home starts -->
-  <section class="home d-flex align-items-center">
+  <section class="home d-flex align-items-center" data-scroll-index="0" id="home">
     <div class="effect-wrap">
       <i class="fas fa-plus effect effect-1"></i>
       <i class="fas fa-plus effect effect-2"></i>
@@ -64,7 +64,7 @@
     </div>
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-7 col-md-7">
+        <div class="col-md-7">
           <div class="home-text">
             <h1>SOLP the Best Commercial Company for your Business </h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -77,7 +77,7 @@
            </div>
         </div>
         </div>
-        <div class="col-lg-5 col-md-5 text-center">
+        <div class="col-md-5 text-center">
           <div class="home-img">
             <img src="img/first.png" alt="solp">
           </div>
@@ -101,7 +101,7 @@
   <!--Video Popup ends -->
 
   <!--Services starts -->
- <section class="services section-padding">
+ <section class="services section-padding" data-scroll-index="1" id="services">
    <div class="container">
      <div class="row justify-content-center">
        <div class="col-lg-8">
@@ -141,7 +141,7 @@
 
 
  <!--achievements starts -->
- <section class="facts section-padding">
+ <section class="facts section-padding" data-scroll-index="2" id="achievements">
    <div class="container">
      <div class="row">
 
@@ -193,7 +193,7 @@
  <!--achievements ends -->
 
  <!--find us starts -->
- <section class="findus section-padding">
+ <section class="findus section-padding" id="findus">
    <div class="container">
      <div class="row justify-content-center">
        <div class="col-lg-8">
@@ -285,7 +285,7 @@
 <!-- work ends -->
 
 <!-- testimonials starts -->
-<section class="testimonials section-padding">
+<section class="testimonials section-padding" data-scroll-index="3">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -371,7 +371,7 @@
 <!-- testimonials ends -->
 
 <!-- pricing starts -->
-<section class="pricing section-padding">
+<section class="pricing section-padding" data-scroll-index="4">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -380,7 +380,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-lg-4 col-md-6">
         <div class="pricing-plan">
           <div class="pricing-header">
@@ -460,7 +460,7 @@
 
 
 <!-- team starts -->
-<section class="team section-padding">
+<section class="team section-padding" id="team">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -584,7 +584,7 @@
 
 
 <!-- contact starts -->
-<section class="contact section-padding">
+<section class="contact section-padding" data-scroll-index="5">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -691,11 +691,11 @@
       <div class="footer-col">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#">home</a></li>
-          <li><a href="#">features</a></li>
-          <li><a href="#">screenshots</a></li>
-          <li><a href="#">pricing</a></li>
-          <li><a href="#">testimonials</a></li>
+          <li><a href="#home">home</a></li>
+          <li><a href="#services">services</a></li>
+          <li><a href="#achievements">achievements</a></li>
+          <li><a href="#findus">find us</a></li>
+          <li><a href="#team">our team</a></li>
         </ul>
       </div>
     </div>
