@@ -7,7 +7,7 @@
    --color-1: #cbe91e;
    --color-2: #db9c15;
    --color-3: #09cfd6;
-   --bg-dark: #040a1b;
+   --bg-dark: #091536;
    --main-dark: var(--main-color);
    --main-bg-dark: var(--bg-dark);
    --shadow-block-100: 0 5px 15px rgba(0,0,0,0.1);
@@ -27,6 +27,18 @@ body{
   line-height: 1.5;
 }
 
+body.dark{
+    background-color: var(--bg-dark);
+    --dark-100: var(--bg-dark);
+    --dark-000: var(--bg-dark);
+    --main-dark: var(--bg-dark);
+    --main-bg-dark: var(--main-color);
+    --shadow-block-100: var(--shadow-block-300);
+    --dark-alpha-100:rgba(255,255,255,0.05);
+    --dark-900: #ffffff;
+    --dark-400: #bbbbbb;
+    --dark-000: #ffffff;
+}
 *{
     margin: 0;
     padding: 0;
@@ -855,7 +867,7 @@ ul{
 .faq .accordion-header h3{
     font-size: 18px;
     font-weight: 500;
-    color: var(--dark-400);
+    color: var(--dark-000);
     margin: 0;
     transition: all 0.5s ease;
 }
@@ -998,6 +1010,26 @@ ul{
     border-top: 1px solid rgba(255,255,255,0.2);
 }
 
+/*==================== THEME ====================*/
+.toggle-theme{
+    position: fixed;
+    right: 0;
+    top: calc(50% - 20px);
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-dark);
+    z-index: 1200;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: var(--shadow-block-300);
+    font-size: 16px;
+    text-align: center;
+}
+
+.toggle-theme i{
+      line-height: 40px;
+}
 /*==================== RESPONSIVE ====================*/
 
 @media(max-width: 991px){
