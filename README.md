@@ -1,7 +1,4 @@
 # SOLP
-
-![plot](./assets/img/logo.png)
-
 is a responsive Web Page for a commercial company
 
 # Technologies
