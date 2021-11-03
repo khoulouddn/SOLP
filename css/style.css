@@ -870,7 +870,7 @@ ul{
 .faq .accordion-header h3{
     font-size: 18px;
     font-weight: 500;
-    color: var(--dark-000);
+    color: var(--dark-400);
     margin: 0;
     transition: all 0.5s ease;
 }
